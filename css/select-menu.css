@@ -1,0 +1,128 @@
+/* 
+
+.select-menu .select-btn{
+    display: flex;
+    height: 55px;
+    background: #fff;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.select-btn i{
+    font-size: 25px;
+    transition: 0.3s;
+}
+.select-menu.active .select-btn i{
+    transform: rotate(-180deg);
+}
+.select-menu .options{
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+    display: none;
+}
+.select-menu.active .options{
+    display: block;
+}
+.options .option{
+    display: flex;
+    height: 55px;
+    cursor: pointer;
+    padding: 0 16px;
+    border-radius: 8px;
+    align-items: center;
+    background: #fff;
+}
+.options .option:hover{
+    background: #F2F2F2;
+}
+.option i{
+    font-size: 25px;
+    margin-right: 12px;
+}
+.option .option-text{
+    font-size: 18px;
+    color: #333;
+} */
+
+
+.slider-wrap {
+    position: relative;
+    width: 90%;
+    height: 40px;
+    /* border: 1px solid rgb(0, 0, 0); */
+    cursor: grab;
+    margin: auto;
+  }
+  
+  .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+  }
+  
+  .slider-inner {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    top: 0;
+    left: 0;
+    width: 1200px;
+    height: 100%;
+    display: flex;
+  }
+  
+  .item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 60px; */
+    height: 100%;
+    padding-top: 3px;
+    /* top: 2%; */
+    /* background-color: rgb(205, 205, 205); */
+    /* border: 1px solid rgb(0, 0, 0); */
+  }
+  
+  .progress-bar {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  
+  .prog-bar-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgb(62, 62, 62);
+  }
+  
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .slider::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .slider {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  
